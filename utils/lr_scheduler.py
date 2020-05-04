@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 1/19/19 3:37 PM
-# @Author  : zhoujun
 from torch.optim.lr_scheduler import MultiStepLR
 
 

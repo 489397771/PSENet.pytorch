@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2018/6/11 15:54
-# @Author  : zhoujun
 import torch
 import shutil
 import numpy as np

@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2018/6/11 15:54
-# @Author  : zhoujun
 import cv2
 import os
 import config
@@ -82,7 +80,8 @@ def train_epoch(net, optimizer, scheduler, train_loader, device, criterion, epoc
         if i % config.display_interval == 0:
             batch_time = time.time() - start
             logger.info(
-                '[{}/{}], [{}/{}], step: {}, {:.3f} samples/sec, batch_loss: {:.4f}, batch_loss_c: {:.4f}, batch_loss_s: {:.4f}, time:{:.4f}, lr:{}'.format(
+                '[{}/{}], [{}/{}], step: {}, {:.3f} samples/sec, '
+                'batch_loss: {:.4f}, batch_loss_c: {:.4f}, batch_loss_s: {:.4f}, time:{:.4f}, lr:{}'.format(
                     epoch, config.epochs, i, all_step, cur_step, config.display_interval * cur_batch / batch_time,
                     loss, loss_c, loss_s, batch_time, lr))
             start = time.time()
@@ -130,7 +129,7 @@ def eval(model, save_path, test_path, device):
         assert os.path.exists(img_path), 'file is not exists'
         img = cv2.imread(img_path)
         h, w = img.shape[:2]
-        #if max(h, w) > long_size:
+        # if max(h, w) > long_size:
         scale = long_size / max(h, w)
         img = cv2.resize(img, None, fx=scale, fy=scale)
         # 将图片由(w,h)变为(1,img_channel,h,w)

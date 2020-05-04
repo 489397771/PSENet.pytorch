@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019/1/3 17:40
-# @Author  : zhoujun
 
 # data config
 trainroot = '/data2/dataset/ICD15/train'
@@ -9,7 +7,7 @@ output_dir = 'output/psenet_icd2015_resnet152_4gpu_author_crop_adam_MultiStepLR_
 data_shape = 640
 
 # train config
-gpu_id = '2'
+gpu_id = '0'
 workers = 12
 start_epoch = 0
 epochs = 600

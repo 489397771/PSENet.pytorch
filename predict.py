@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 1/4/19 11:14 AM
-# @Author  : zhoujun
 import torch
 from torchvision import transforms
 import os

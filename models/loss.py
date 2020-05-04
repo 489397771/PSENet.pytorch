@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 3/29/19 11:03 AM
-# @Author  : zhoujun
+
 import torch
 from torch import nn
 import numpy as np
