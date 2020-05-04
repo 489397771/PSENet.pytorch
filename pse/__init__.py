@@ -9,6 +9,7 @@ BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 if subprocess.call(['make', '-C', BASE_DIR]) != 0:  # return value
     raise RuntimeError('Cannot compile pse: {}'.format(BASE_DIR))
 
+
 def pse_warpper(kernals, min_area=5):
     '''
     reference https://github.com/liuheng92/tensorflow_PSENet/blob/feature_dev/pse
